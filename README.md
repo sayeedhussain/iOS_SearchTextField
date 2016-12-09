@@ -51,4 +51,4 @@ Programmatic:
 
 #Results
 ![Screenshot](https://sayeedhussain.github.io/searchtextfield-screenshot1.png)
-![Screenshot](https://sayeedhussain.github.io/searchtextfield-screenshot2.png)
+![Screenshot](https://sayeedhussain.github.io/searchtextfield-screenshot3.png)
