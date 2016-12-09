@@ -29,7 +29,14 @@ class SearchTextField: UITextField {
     /**
      The max height of the search results drop down. Default height is 44.0(row Height) * 3. Ignored if keyboard frame hides the search results.
     */
-    var tableViewMaxHeight: CGFloat?
+    var tableViewMaxHeight: CGFloat? {
+        
+        didSet {
+            if let maxHeight = tableViewMaxHeight {
+                tableViewHeight.constant = maxHeight
+            }
+        }
+    }
     
     /////end of configurable properties
 
@@ -55,7 +62,6 @@ class SearchTextField: UITextField {
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
-    
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         return false
@@ -104,7 +110,6 @@ class SearchTextField: UITextField {
     
     fileprivate func _dismiss() {//dismiss
         self.resignFirstResponder()
-//        self.text = nil
         filteredDataSource = nil
         tableView.reloadData()
         tableView.isHidden = true
@@ -112,6 +117,7 @@ class SearchTextField: UITextField {
     
     fileprivate func _layout() {
         
+        //proceed with the layout
         self.superview?.addSubview(tableView)
         self.superview?.bringSubview(toFront: tableView)
         
