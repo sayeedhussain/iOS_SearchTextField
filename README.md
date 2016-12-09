@@ -22,8 +22,8 @@ Programmatic:
 
     override func viewDidLoad() {
         
-            super.viewDidLoad()
-            // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
 
         let textField = SearchTextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         textField.placeholder = "Enter City"
