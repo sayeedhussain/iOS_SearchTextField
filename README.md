@@ -14,7 +14,6 @@ Storyboard: Add a textfield to the ViewController's view in the storyboard and c
         // Do any additional setup after loading the view, typically from a nib.
         
         textField.searchDelegate = self
-        textField.tableViewMaxHeight = 88.0//not required if you are fine with default values.
         textField.setDataSource(["Paris", "London", "Madrid", "Detroit", "Dublin", "Manchester", "San Francisco", "New York", "Melbourne", "Chicago", "Madison", "Denver", "Washington", "Milan"])
         
     }
