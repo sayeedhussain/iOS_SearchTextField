@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchTextFieldResultTVCell" customModule="Dummy" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="SearchTextFieldResultTVCell" id="ATw-qr-FEo" customClass="SearchTextFieldResultTVCell" customModule="Dummy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ATw-qr-FEo" id="o0G-WK-3Cd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwX-Y3-Fz5">
+                        <rect key="frame" x="15" y="14" width="290" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS2-sm-7eD">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="Yba-po-1ao">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yba-po-1ao"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Yba-po-1ao"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dwX-Y3-Fz5" secondAttribute="trailing" constant="264" id="3Ld-jW-eaR">
+                        <variation key="widthClass=compact" constant="15"/>
+                    </constraint>
+                    <constraint firstItem="XS2-sm-7eD" firstAttribute="leading" secondItem="o0G-WK-3Cd" secondAttribute="leading" id="61s-SH-By9">
+                        <variation key="widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="dwX-Y3-Fz5" firstAttribute="leading" secondItem="o0G-WK-3Cd" secondAttribute="leading" constant="10" id="7QP-j1-8fF">
+                        <variation key="widthClass=compact" constant="15"/>
+                    </constraint>
+                    <constraint firstItem="dwX-Y3-Fz5" firstAttribute="centerY" secondItem="o0G-WK-3Cd" secondAttribute="centerY" id="TmI-ri-RKL"/>
+                    <constraint firstAttribute="trailing" secondItem="XS2-sm-7eD" secondAttribute="trailing" id="dJt-Rs-h4Z">
+                        <variation key="widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="XS2-sm-7eD" secondAttribute="bottom" id="jxP-tw-JsN">
+                        <variation key="widthClass=compact" constant="0.0"/>
+                    </constraint>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="dwX-Y3-Fz5"/>
+                        <exclude reference="XS2-sm-7eD"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="3Ld-jW-eaR"/>
+                        <exclude reference="7QP-j1-8fF"/>
+                        <exclude reference="TmI-ri-RKL"/>
+                        <exclude reference="61s-SH-By9"/>
+                        <exclude reference="dJt-Rs-h4Z"/>
+                        <exclude reference="jxP-tw-JsN"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="dwX-Y3-Fz5"/>
+                        <include reference="XS2-sm-7eD"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="3Ld-jW-eaR"/>
+                        <include reference="7QP-j1-8fF"/>
+                        <include reference="TmI-ri-RKL"/>
+                        <include reference="61s-SH-By9"/>
+                        <include reference="dJt-Rs-h4Z"/>
+                        <include reference="jxP-tw-JsN"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="lbl" destination="dwX-Y3-Fz5" id="WHd-Hl-Bhb"/>
+            </connections>
+            <point key="canvasLocation" x="405" y="-40"/>
+        </tableViewCell>
+    </objects>
+</document>

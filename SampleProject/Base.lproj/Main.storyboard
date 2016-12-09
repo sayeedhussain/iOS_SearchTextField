@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cFu-th-qws">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="QlS-UD-y7R">
+            <objects>
+                <viewController id="cFu-th-qws" customClass="ViewController" customModule="SampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mE1-09-Bww"/>
+                        <viewControllerLayoutGuide type="bottom" id="fGL-5D-RaX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BUg-dD-L2B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select A City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V3-06-teB">
+                                <rect key="frame" x="20" y="40" width="88.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.53944182399999996" green="0.25867453219999997" blue="0.045324478299999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9c9-4h-D2g" customClass="SearchTextField" customModule="SampleProject" customModuleProvider="target">
+                                <rect key="frame" x="20" y="66" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72701787949999996" green="0.86333370210000004" blue="0.76001477240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9c9-4h-D2g" firstAttribute="top" secondItem="4V3-06-teB" secondAttribute="bottom" constant="8" id="0Yw-J3-Bq3"/>
+                            <constraint firstItem="4V3-06-teB" firstAttribute="leading" secondItem="BUg-dD-L2B" secondAttribute="leading" constant="20" id="KEV-Gg-e8H"/>
+                            <constraint firstItem="4V3-06-teB" firstAttribute="top" secondItem="mE1-09-Bww" secondAttribute="bottom" constant="20" id="V8Z-oe-Vfc"/>
+                            <constraint firstAttribute="trailing" secondItem="9c9-4h-D2g" secondAttribute="trailing" constant="20" id="lTV-Ed-KYf"/>
+                            <constraint firstItem="9c9-4h-D2g" firstAttribute="leading" secondItem="4V3-06-teB" secondAttribute="leading" id="pra-NE-JlH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="9c9-4h-D2g" id="54D-KB-GE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZmE-R1-n3n" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="46.326836581709152"/>
+        </scene>
+    </scenes>
+</document>
