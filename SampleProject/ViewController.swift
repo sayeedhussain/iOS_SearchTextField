@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
 
         self.textField.searchDelegate = self
-        self.textField.tableViewMaxHeight = 88.0
         self.textField.setDataSource(["Paris", "London", "Madrid", "Detroit", "Dublin", "Manchester", "San Francisco", "New York", "Melbourne", "Chicago", "Madison", "Denver", "Washington", "Milan"])
 
         /*
